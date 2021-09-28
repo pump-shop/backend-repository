@@ -3,5 +3,5 @@ package backendrepository
 import "log"
 
 func TestRepo() {
-	log.Println("ok")
+	log.Println("ok2")
 }
