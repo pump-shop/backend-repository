@@ -10,6 +10,10 @@ type Product struct {
 	Price int    `json:"price"`
 }
 
+func (p *Product) TableName() string {
+	return "product"
+}
+
 //create a product
 func CreateProduct(db *gorm.DB, product *Product) error {
 	result := db.Create(product)
